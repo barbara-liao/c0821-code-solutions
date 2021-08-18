@@ -1,0 +1,10 @@
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+}
+h2, p {
+  font-family: 'Dosis', sans-serif;
+}
+
+body {
+  line-height: 1.5em;
+}
