@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(25,150,218);
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  max-width: 1256px;
+  padding: 55px 90px 40px 90px;
+}
+
+.font {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-gray {
+  color: rgb(209,217,221)
+}
+
+.justify-center {
+  justify-content: center;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  max-width: 91%;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+  max-width: 91%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.padding-side {
+  padding: 0px 23px 0px 31px;
+}
+
+img {
+  width: 98%;
+  height: 98%;
+}
+
+.circle {
+  height: 115px;
+  width: 115px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 25px
+}
+
+.full-column {
+  width: 100%;
+}
+
+.letter-space {
+  letter-spacing: 0.052rem;
+}
+
+.font-heading {
+  font-size: 1.23rem;
+  font-weight: 300;
+}
+
+.font-title {
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+.font-body {
+  font-size: 0.93rem;
+  letter-spacing: -.01rem;
+}
+
+.padding-bottom {
+  padding-bottom: 13px;
+}
+
+.padding-top {
+  padding-top: 6px;
+  max-height: 50px;
+}
+
+.line-height {
+  line-height: 145%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.max-width {
+  max-width: 91%;
+}
