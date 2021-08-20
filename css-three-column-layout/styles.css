@@ -30,12 +30,10 @@
 
 .row {
   display: flex;
-  max-width: 91%;
 }
 
 .column-one-third {
   flex-basis: calc(100% / 3);
-  max-width: 91%;
 }
 
 .align-center {
@@ -43,7 +41,7 @@
 }
 
 .padding-side {
-  padding: 0px 23px 0px 31px;
+  padding: 0px 19px 0px 31px;
 }
 
 img {
@@ -100,5 +98,6 @@ img {
 }
 
 .max-width {
+  align-content: center;
   max-width: 91%;
 }
