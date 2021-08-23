@@ -9,6 +9,10 @@
   display: flex;
 }
 
+.flex {
+  display: flex;
+}
+
 .margin-auto {
   margin: 0 auto;
 }
@@ -63,6 +67,10 @@
   align-content: center;
 }
 
+.align-item {
+  align-items: center;
+}
+
 .text-center {
   text-align: center;
 }
@@ -72,19 +80,19 @@
 }
 
 .gray-background {
-  background-color: rgb(250,250,250);
+  background-color: rgb(250, 250, 250);
 }
 
 .dark-gray-background {
-  background-color: rgb(82,83,81);
+  background-color: rgb(82, 83, 81);
 }
 
 .light-gray-font {
-  color: rgb(255,255,255)
+  color: rgb(255, 255, 255);
 }
 
 .gray-font {
-  color: rgb(110,110,110)
+  color: rgb(110, 110, 110);
 }
 
 button,
@@ -96,21 +104,26 @@ h1 {
   font-family: 'Tiempos Headline', sans-serif;
 }
 
+img {
+  width: 65%;
+  height: 65%;
+}
+
 .button-started {
   color: white;
-  background-color: rgb(41,68,100);
+  background-color: rgb(41, 68, 100);
   border: none;
   padding: 1.1rem 3.3rem;
-  border-radius: .26rem;
+  border-radius: 0.26rem;
   font-size: 1.4rem;
 }
 
 .button-contact {
   color: white;
-  background-color: rgb(41,68,100);
+  background-color: rgb(41, 68, 100);
   border: none;
-  padding: .4rem 1rem;
-  border-radius: .15rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.15rem;
   font-size: 1.2rem;
 }
 
@@ -121,7 +134,7 @@ h1 {
 }
 
 .note-width {
-  width: 39%
+  width: 39%;
 }
 
 .locations {
@@ -154,13 +167,8 @@ h1 {
   margin: 4.8rem auto;
 }
 
-.hero > img {
-  margin: 0 auto;
-  max-width: 80%;
-}
-
 .overlay {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   height: 100%;
 }
 
@@ -171,10 +179,11 @@ h1 {
 .hero-text-header {
   color: white;
   font-size: 1.33rem;
+
   /* line-height: 1.3rem; */
 }
 
-.hero-text-body {
+.text-body {
   color: white;
   line-height: 1.9rem;
 }
@@ -193,5 +202,13 @@ h1 {
 }
 
 .hr-line {
-  border-top: rgb(231,233,236);
+  border-top: rgb(231, 233, 236);
+}
+
+.link-padding {
+  padding: 8rem 0;
+}
+
+.header-margin-padding {
+  padding: 1rem;
 }
