@@ -104,9 +104,10 @@ h1 {
   font-family: 'Tiempos Headline', sans-serif;
 }
 
-img {
+.white-logo {
   width: 65%;
   height: 65%;
+  margin: 0 0 3.3rem 0;
 }
 
 .button-started {
@@ -123,8 +124,10 @@ img {
   background-color: rgb(41, 68, 100);
   border: none;
   padding: 0.4rem 1rem;
-  border-radius: 0.15rem;
-  font-size: 1.2rem;
+  border-radius: 0.26rem;
+  font-size: 1.15rem;
+  height: 50px;
+  margin: auto 0;
 }
 
 .avenir {
@@ -135,10 +138,16 @@ img {
 
 .note-width {
   width: 39%;
+  line-height: 1.8rem;
 }
 
 .locations {
-  font-size: 1.43rem;
+  font-size: 1.4rem;
+  margin: -0.5rem;
+}
+
+.locations-margin {
+  margin: 2.2rem 0 4.5rem 0;
 }
 
 .p-font-size {
@@ -179,8 +188,6 @@ img {
 .hero-text-header {
   color: white;
   font-size: 1.33rem;
-
-  /* line-height: 1.3rem; */
 }
 
 .text-body {
@@ -190,11 +197,16 @@ img {
 
 .address-detail {
   color: white;
+  font-size: 1.15rem;
 }
 
 .company-product-detail {
   color: white;
   flex-direction: column;
+}
+
+.company-product-font {
+  font-size: 1.4rem;
 }
 
 .row-reverse {
@@ -211,4 +223,36 @@ img {
 
 .header-margin-padding {
   padding: 1rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.blue-logo {
+  height: 53%;
+  padding-left: 3.1rem;
+}
+
+.header-detail {
+  justify-content: space-around;
+  padding-left: 20%;
+  font-size: 1.12rem;
+  padding-right: 1.3rem;
+}
+
+.prefer-margin {
+  margin: 1.4rem 0 -1.15rem 0;
+}
+
+.column-location {
+  width: 90%;
+  margin: 0 auto 2rem auto;
+}
+
+.company-product-margin {
+  margin: 0.7rem 0;
+}
+
+.privacy-margin {
+  width: 85%;
+  margin: 3.9rem auto;
 }
