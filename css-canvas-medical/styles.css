@@ -52,7 +52,6 @@
 
 .position-absolute {
   position: absolute;
-  bottom: 5.3rem;
 }
 
 .position-relative {
@@ -168,16 +167,21 @@ h1 {
 }
 
 .hero {
-  max-width: 85.7%;
+  width: 85.7%;
   height: 603px;
   background-image: url('images/hero.jpg');
   background-size: cover;
   position: relative;
+  background-position: center;
   margin: 4.8rem auto;
 }
 
+.hero > img {
+  width: 100%;
+}
+
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
   height: 100%;
 }
 
@@ -255,4 +259,18 @@ h1 {
 .privacy-margin {
   width: 85%;
   margin: 3.9rem auto;
+}
+
+.button-placement {
+  bottom: 5.3rem;
+}
+
+.header-placement {
+  top: 4.3rem;
+  width: 47%;
+}
+
+.body-placement {
+  top: 13.2rem;
+  width: 47%;
 }
