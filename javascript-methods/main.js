@@ -50,7 +50,7 @@ library.splice(1, 1);
 
 console.log(library);
 
-var fullName = 'Barbara' + ' ' + 'Liao';
+var fullName = 'Barbara Liao';
 var firstAndLastName = fullName.split(' ');
 
 console.log('firstAndLastName: ', firstAndLastName);
