@@ -9,7 +9,7 @@ body {
 .container {
   margin: 0 auto;
   flex-wrap: wrap;
-  max-width: 1500px;
+  max-width: 1275px;
 }
 
 .font {
@@ -47,16 +47,33 @@ body {
 
 img {
   object-fit: cover;
-  width: 260px;
-  height: 400px;
+  width: 233px;
+  height: 360px;
 }
 
 .vl {
   border-left: 1px solid rgb(213, 213, 213);
-  height: 22px;
+  height: 19px;
   margin: auto 5px;
 }
 
 .padding-left {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 10px;
+}
+
+.margin-top-bottom {
+  margin: 18px 0;
+}
+
+.margin-detail {
+  margin: 0 6px 0 0;
+}
+
+.font-size-subheader {
+  font-size: 1.8rem;
+}
+
+.font-size-detail {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
