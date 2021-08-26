@@ -3,7 +3,7 @@
 }
 
 .container {
-  background-color: rgb(25,150,218);
+  background-color: rgb(25, 150, 218);
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@
 }
 
 .font-gray {
-  color: rgb(209,217,221)
+  color: rgb(209, 217, 221);
 }
 
 .justify-center {
@@ -41,7 +41,7 @@
 }
 
 .padding-side {
-  padding: 0px 19px 0px 31px;
+  padding: 0 19px 0 31px;
 }
 
 img {
@@ -54,7 +54,7 @@ img {
   width: 115px;
   background-color: white;
   border-radius: 50%;
-  padding: 25px
+  padding: 25px;
 }
 
 .full-column {
@@ -77,7 +77,7 @@ img {
 
 .font-body {
   font-size: 0.93rem;
-  letter-spacing: -.01rem;
+  letter-spacing: -0.01rem;
 }
 
 .padding-bottom {

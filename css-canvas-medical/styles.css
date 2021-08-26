@@ -1,0 +1,275 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  max-width: 1425px;
+}
+
+.row {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.margin-top-auto {
+  margin: auto;
+}
+
+.margin-zero {
+  margin: 0;
+}
+
+.column-full {
+  flex-basis: 100%;
+  margin: 0 auto;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.column-two-thirds {
+  flex-basis: calc(200% / 3);
+}
+
+.column-one-sixth {
+  flex-basis: calc(100% / 6);
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.align-item {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.gray-background {
+  background-color: rgb(250, 250, 250);
+}
+
+.dark-gray-background {
+  background-color: rgb(82, 83, 81);
+}
+
+.light-gray-font {
+  color: rgb(255, 255, 255);
+}
+
+.gray-font {
+  color: rgb(110, 110, 110);
+}
+
+button,
+p {
+  font-family: 'Avenir', sans-serif;
+}
+
+h1 {
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+.white-logo {
+  width: 26%;
+  margin: 0 0 3.3rem 0;
+}
+
+.button-started {
+  color: white;
+  background-color: rgb(41, 68, 100);
+  border: none;
+  padding: 1.1rem 3.3rem;
+  border-radius: 0.26rem;
+  font-size: 1.4rem;
+}
+
+.button-contact {
+  color: white;
+  background-color: rgb(41, 68, 100);
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0.26rem;
+  font-size: 1.15rem;
+  height: 50px;
+  margin: auto 0;
+}
+
+.avenir {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.note-width {
+  width: 39%;
+  line-height: 1.8rem;
+}
+
+.locations {
+  font-size: 1.4rem;
+  margin: -0.5rem;
+}
+
+.locations-margin {
+  margin: 2.2rem 0 4.5rem 0;
+}
+
+.p-font-size {
+  font-size: 1.11rem;
+  font-weight: 550;
+}
+
+.padding-left {
+  padding-left: 6.5rem;
+}
+
+.margin-top-bottom {
+  margin: 2rem 0;
+}
+
+.margin-hero-header {
+  margin: 1rem 0;
+}
+
+.hero {
+  width: 85.7%;
+  height: 603px;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  margin: 4.8rem auto;
+}
+
+.hero > img {
+  width: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+
+.hero-sizing {
+  padding: 4.2rem 9.8rem 5rem 5.3rem;
+}
+
+.hero-text-header {
+  color: white;
+  font-size: 1.33rem;
+}
+
+.text-body {
+  color: white;
+  line-height: 1.9rem;
+}
+
+.address-detail {
+  color: white;
+  font-size: 1.15rem;
+}
+
+.company-product-detail {
+  color: white;
+  flex-direction: column;
+}
+
+.company-product-font {
+  font-size: 1.4rem;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.hr-line {
+  border-top: rgb(231, 233, 236);
+}
+
+.link-padding {
+  padding: 8rem 0;
+}
+
+.header-margin-padding {
+  padding: 1rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.blue-logo {
+  height: 53%;
+  padding-left: 3.1rem;
+}
+
+.header-detail {
+  justify-content: space-around;
+  padding-left: 20%;
+  font-size: 1.12rem;
+  padding-right: 1.3rem;
+}
+
+.prefer-margin {
+  margin: 1.4rem 0 -1.15rem 0;
+}
+
+.column-location {
+  width: 90%;
+  margin: 0 auto 2rem auto;
+}
+
+.company-product-margin {
+  margin: 0.7rem 0;
+}
+
+.privacy-margin {
+  width: 85%;
+  margin: 3.9rem auto;
+}
+
+.button-placement {
+  bottom: 5.3rem;
+}
+
+.header-placement {
+  top: 4.3rem;
+  width: 47%;
+}
+
+.body-placement {
+  top: 13.2rem;
+  width: 47%;
+}
