@@ -53,7 +53,7 @@ function doubleAll(numbers) {
 function getKeys(object) {
   var keys = [];
   for (var property in object) {
-    keys.push(`${property}`);
+    keys.push(property);
   }
   return keys;
 }
@@ -61,7 +61,7 @@ function getKeys(object) {
 function getValues(object) {
   var values = [];
   for (var property in object) {
-    values.push(`${object[property]}`);
+    values.push(object[property]);
   }
   return values;
 }
