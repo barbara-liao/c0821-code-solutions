@@ -8,15 +8,7 @@
 */
 
 function isVowel(char) {
-  if (char.toLowerCase() === 'a') {
-    return true;
-  } else if (char.toLowerCase() === 'e') {
-    return true;
-  } else if (char.toLowerCase() === 'i') {
-    return true;
-  } else if (char.toLowerCase() === 'o') {
-    return true;
-  } else if (char.toLowerCase() === 'u') {
+  if (char.toLowerCase() === 'a' || char.toLowerCase() === 'e' || char.toLowerCase() === 'i' || char.toLowerCase() === 'o' || char.toLowerCase() === 'u') {
     return true;
   }
   return false;

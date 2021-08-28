@@ -21,12 +21,12 @@
 function capitalize(word) {
   var output = '';
   var letter = '';
-  for (var i = 0; i < word.length; i++) {
-    if (i === 0) {
-      letter = word[i].toUpperCase();
-      output += letter;
-      letter = '';
-    } else {
+  var i = 0;
+  letter = word[i].toUpperCase();
+  output += letter;
+  letter = '';
+  for (i = 1; i < word.length; i++) {
+    if (i !== 0) {
       letter = word[i].toLowerCase();
       output += letter;
       letter = '';
