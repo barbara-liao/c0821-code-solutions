@@ -26,11 +26,9 @@ function capitalize(word) {
   output += letter;
   letter = '';
   for (i = 1; i < word.length; i++) {
-    if (i !== 0) {
-      letter = word[i].toLowerCase();
-      output += letter;
-      letter = '';
-    }
+    letter = word[i].toLowerCase();
+    output += letter;
+    letter = '';
   }
   return output;
 }
