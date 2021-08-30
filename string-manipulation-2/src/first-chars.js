@@ -16,7 +16,7 @@ function firstChars(length, string) {
     if (string.length > length) {
       output += string[i];
     } else {
-      output = string;
+      return string;
     }
   }
   return output;
