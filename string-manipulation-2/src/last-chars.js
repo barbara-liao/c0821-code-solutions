@@ -12,11 +12,12 @@
 
 function lastChars(length, string) {
   var output = '';
+  if (string.length < length) {
+    return string;
+  }
   for (var i = string.length - 1; i > string.length - 1 - length; i--) {
     if (string.length > length) {
       output = string[i] + output;
-    } else {
-      output = string;
     }
   }
   return output;

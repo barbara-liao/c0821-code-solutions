@@ -12,11 +12,12 @@
 
 function firstChars(length, string) {
   var output = '';
+  if (string.length < length) {
+    return string;
+  }
   for (var i = 0; i < length; i++) {
     if (string.length > length) {
       output += string[i];
-    } else {
-      return string;
     }
   }
   return output;
