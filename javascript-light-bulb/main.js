@@ -1,9 +1,22 @@
+/*
+- create storage to see whether lightbulb is on or off
+- if lightbulb is dark,
+  - change to light
+- if lightbulb is light
+  - change to dark
+- change classnames
+*/
+
+var isOn = false;
+
 function handleLight(event) {
   var change = '';
-  if ($button.className === 'click ' + 'dark') {
+  if (isOn === false) {
     change = 'light';
-  } else if ($button.className === 'click ' + 'light') {
+    isOn = true;
+  } else if (isOn === true) {
     change = 'dark';
+    isOn = false;
   }
   $button.className = 'click ' + change;
   $body.className = change;
