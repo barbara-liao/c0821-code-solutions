@@ -7,9 +7,17 @@ function handleClick(event) {
   if (clicks < 4) {
     color = 'cold';
   } else if (clicks < 7) {
-    hotButton.cool = hotButton.tepid;
+    color = 'cool';
+  } else if (clicks < 10) {
+    color = 'tepid';
+  } else if (clicks < 13) {
+    color = 'warm';
+  } else if (clicks < 16) {
+    color = 'hot';
+  } else {
+    color = 'nuclear';
   }
-  hotButton.className = 'hot-button' + color;
+  hotButton.className = 'hot-button ' + color;
 }
 
 var hotButton = document.querySelector('.hot-button');
