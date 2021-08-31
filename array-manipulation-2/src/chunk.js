@@ -3,49 +3,31 @@
 /*
 - create storage for output
 - create storage for current array
-- look at each element one by one
-- if it's the last element,
-  - add to current array and push it to output
-- and if current array length is less than size
-  - push element into array
-- and if current array length is equal to size
-  - push current array into output
-  - clear current array
-- otherwise,
-  - make output equal array
-- return output
+- push current array storage into the output
+- if the length in the last array in the output is less than size
+  - push current element to the last array in the output
+- if the length in the last array in the output is equal to size
+  - push new current array array into output
+  - push current element to the last array in the output
+- else,
+  - make output equal to array
 */
 
 function chunk(array, size) {
   var output = [];
   var currentArray = [];
+  output.push(currentArray);
+  if (array.length === 0) {
+    return array;
+  }
   for (var i = 0; i < array.length; i++) {
-    // debugger;
-    if (i === array.length - 1) {
-      currentArray.push(array[i]);
-      output.push(currentArray);
-    } else if (currentArray.length < size) {
-      currentArray.push(array[i]);
-    } else if (currentArray.length === size) {
-      currentArray.push(array[i]);
-      output.push(currentArray);
+    if (output[output.length - 1].length < size) {
+      output[output.length - 1].push(array[i]);
+    } else if (output[output.length - 1].length === size) {
       currentArray = [];
-    } else {
-      output = array;
+      output.push(currentArray);
+      output[output.length - 1].push(array[i]);
     }
   }
   return output;
 }
-
-// function chunk(array, size) {
-//   var output = [];
-//   for (var element of array) {
-//     var last = output[output.length - 1];
-//     if (!last || last.length === size) {
-//       output.push([element]);
-//     } else {
-//       last.push(element);
-//     }
-//   }
-//   return output;
-// }
