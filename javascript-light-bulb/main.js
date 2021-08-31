@@ -1,11 +1,8 @@
-var onOff = 0;
-
 function handleLight(event) {
-  onOff++;
   var change = '';
-  if (onOff % 2 === 1) {
+  if ($button.className === 'click ' + 'dark') {
     change = 'light';
-  } else {
+  } else if ($button.className === 'click ' + 'light') {
     change = 'dark';
   }
   $button.className = 'click ' + change;
