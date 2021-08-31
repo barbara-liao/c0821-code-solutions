@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body.light {
+  background-color: rgb(254, 249, 241);
+}
+
+body.dark {
+  background-color: rgb(17, 17, 17);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.light {
+  background-color: rgb(250, 234, 132);
+  border: solid 2px rgb(250, 234, 132);
+  box-shadow: 0 0 8px 1px rgb(250, 234, 132);
+}
+
+.dark {
+  background-color: rgb(37, 37, 37);
+  border: solid 2px rgb(37, 37, 37);
+}
+
+button {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  margin: 11rem auto;
+}
