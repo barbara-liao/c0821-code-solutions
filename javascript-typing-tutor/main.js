@@ -7,15 +7,21 @@
 //   - the element will turn red and will not continue
 // */
 
-// function type(event) {
-//   if ()
-// }
+var spanCount = 0;
+var letterCorrect = 'font-color-correct';
+var letterIncorrect = 'font-color-incorrect';
+var borderBottom = 'border-bottom';
 
-// for (var i = 0; i > event.length; i++) {
-//   if (i)
-// }
+function handleType(event) {
+  if (span[spanCount].innerText === event.key) {
+    span[spanCount].className = letterCorrect;
+    spanCount++;
+    span[spanCount].className = borderBottom;
+  } else {
+    span[spanCount].className = letterIncorrect + ' ' + borderBottom;
+  }
+}
 
-// var $span = document.querySelectorAll('span');
-// var $borderBottom = document.
+var span = document.querySelectorAll('span');
 
-// document.addEventListener('keydown', type);
+document.addEventListener('keydown', handleType);
