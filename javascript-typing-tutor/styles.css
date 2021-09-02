@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.font {
+  font-family: 'Mitr', sans-serif;
+  font-weight: 500;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-top {
+  margin: 10rem 0 0 0;
+}
+
+.font-color {
+  color: black;
+}
+
+.font-color-correct {
+  color: rgb(43, 197, 94);
+}
+
+.font-color-incorrect {
+  color: rgb(204, 25, 25);
+}
+
+.border-bottom {
+  border-bottom: solid 3px black;
+}
