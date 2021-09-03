@@ -21,3 +21,14 @@
 //   }
 //   return output;
 // }
+
+// create storage
+// go through one by one
+// if key is not in
+
+// function omit(source, keys) {
+//   var output = {}
+//   for !(keys in source) {
+//     output[keys] = source[keys];
+//   }
+// }
