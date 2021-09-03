@@ -11,12 +11,12 @@
 function capitalizeWord(word) {
   var output = '';
   output = word[0].toUpperCase();
+  if (word.toUpperCase() === 'JAVASCRIPT') {
+    output = 'JavaScript';
+    return output;
+  }
   for (var i = 1; i < word.length; i++) {
-    if (word.toUpperCase() !== 'JAVASCRIPT') {
-      output += word[i].toLowerCase();
-    } else {
-      output = 'JavaScript';
-    }
+    output += word[i].toLowerCase();
   }
   return output;
 }
