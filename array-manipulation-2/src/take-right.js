@@ -12,11 +12,13 @@
 
 function takeRight(array, count) {
   var output = [];
+  if (array.length < count) {
+    output = array;
+    return output;
+  }
   for (var i = array.length - 1; i > array.length - 1 - count; i--) {
     if (array.length > count) {
       output.unshift(array[i]);
-    } else {
-      output = array;
     }
   }
   return output;

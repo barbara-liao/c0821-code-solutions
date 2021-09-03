@@ -12,11 +12,13 @@
 
 function dropRight(array, count) {
   var output = [];
+  if (array.length < count) {
+    output = array;
+    return output;
+  }
   for (var i = 0; i < array.length - count; i++) {
     if (array.length > count) {
       output.push(array[i]);
-    } else {
-      output = array;
     }
   }
   return output;

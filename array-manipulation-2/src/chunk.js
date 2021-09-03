@@ -21,13 +21,11 @@ function chunk(array, size) {
     return array;
   }
   for (var i = 0; i < array.length; i++) {
-    if (output[output.length - 1].length < size) {
-      output[output.length - 1].push(array[i]);
-    } else if (output[output.length - 1].length === size) {
+    if (output[output.length - 1].length === size) {
       currentArray = [];
       output.push(currentArray);
-      output[output.length - 1].push(array[i]);
     }
+    output[output.length - 1].push(array[i]);
   }
   return output;
 }
