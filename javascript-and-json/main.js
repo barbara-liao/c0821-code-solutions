@@ -21,7 +21,7 @@ console.log('type of: ', typeof books);
 console.log(JSON.stringify(books));
 console.log('typeof: ', typeof JSON.stringify(books));
 
-var barbara = JSON.stringify({ 'Number id': 1, 'String name': 'Barbara' });
+var barbara = '{ "Number id": 1, "String name": "Barbara" }';
 console.log('typeof: ', typeof barbara);
 
 var obj = JSON.parse(barbara);
