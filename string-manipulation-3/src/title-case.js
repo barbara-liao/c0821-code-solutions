@@ -6,6 +6,8 @@
 - look at each character one by one
 - if space and second from the last character in output is ':',
   - capitalize the character and add to the temporary output
+  - add temp output to output
+  - clear temporary output
 - and if space and temporary storage is 'in, for, of, the',
   - make temporary storage lower case
   - add a space to the end of the temporary output
@@ -32,17 +34,15 @@ function titleCase(title) {
   var tempOutput = title[0].toUpperCase();
 
   for (var i = 1; i < title.length; i++) {
-    // debugger;
     if (title[i] === ' ' && output[(output.length - 2)] === ':') {
       tempOutput += title[i].toUpperCase();
+      output += tempOutput;
+      tempOutput = '';
     } else if (title[i] === ' ' && output !== '' && (tempOutput === 'In' || tempOutput === 'For' || tempOutput === 'Of' || tempOutput === 'The' || tempOutput === 'To')) {
       output += (tempOutput.toLowerCase() + ' ');
       tempOutput = '';
-    } else if (title[i] === ' ' && tempOutput === 'Javascript') {
-      output += 'JavaScript ';
-      tempOutput = '';
-    } else if (title[i] === ' ' && tempOutput === 'Api') {
-      output += 'API';
+    } else if (tempOutput === 'Javascript') {
+      output += 'JavaScript' + title[i];
       tempOutput = '';
     } else if (title[i] === ' ') {
       output += (tempOutput + ' ');
@@ -55,8 +55,9 @@ function titleCase(title) {
       tempOutput += title[i].toLowerCase();
     }
   }
+  if (tempOutput === 'Api') {
+    tempOutput = 'API';
+  }
   output += tempOutput;
   return output;
 }
-
-titleCase('speaking Javascript: an in-depth guide for programmers');
