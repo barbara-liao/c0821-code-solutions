@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-one-fifth flex justify-center align-center">
+        <i id="left" class="fas fa-chevron-left"></i>
+      </div>
+      <div class="col-three-fifth">
+        <div id="gallery" class="row justify-center align-center">
+          <img data-view="bulb" class="image" src="images/001.png">
+          <img data-view="char" class="image hidden" src="images/004.png">
+          <img data-view="squir" class="image hidden" src="images/007.png">
+          <img data-view="pika" class="image hidden" src="images/025.png">
+          <img data-view="jigg" class="image hidden" src="images/039.png">
+        </div>
+        <div id="circle-select" class="row justify-center align-center">
+          <i data-view="bulb" class="size fas fa-circle"></i>
+          <i data-view="char" class="size far fa-circle"></i>
+          <i data-view="squir" class="size far fa-circle"></i>
+          <i data-view="pika" class="size far fa-circle"></i>
+          <i data-view="jigg" class="size far fa-circle"></i>
+        </div>
+      </div>
+      <div class="col-one-fifth flex justify-center align-center">
+        <i id="right" class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+    <!-- <div class="row arrow-size justify-between align-center">
+      <i name="left" class="fas fa-chevron-left"></i>
+      <img src="images/001.png">
+      <i name="right" class="fas fa-chevron-right"></i>
+    </div>
+    <div class="row justify-center align-center">
+      <i class="fas fa-circle"></i>
+      <i class="far fa-circle"></i>
+      <i class="far fa-circle"></i>
+      <i class="far fa-circle"></i>
+      <i class="far fa-circle"></i>
+    </div> -->
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
