@@ -2,12 +2,12 @@
 
 /*
 - create storage for output
-- create a storage for temporary output
 - look at each set of arrays one at a time
-- push the array into the temporary output storage
-- for each of the arrays sets in the temporary output storage,
-- push what is inside of the array into the storage
-- clear the temporary output
+- if the array is an array,
+  - look at each item in the current array
+  - push the current array into the temporary output storage
+- otherwise,
+  - push the array into the storage
 - return output
 */
 
