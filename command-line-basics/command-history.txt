@@ -1,0 +1,127 @@
+    1  cd ~/repos/c0821-code-solutions/
+    2  git status
+    3  git staus
+    4  git status
+    5  git branch es-6-const-let
+    6  git switch es-6-const-let 
+    7  git branch -M es6-const-let
+    8  git status
+    9  git add es6-const-let/
+   10  git status
+   11  git commit -m "Completed es6-const-let exercise."
+   12  git push origin es6-const-let 
+   13  git status
+   14  git checkout master
+   15  git branch es6-template-literals
+   16  git status
+   17  git add es6-template-literals/
+   18  git commit -m "Completed es6-template-literals exercise."
+   19  git push origin es6-template-literals 
+   20  git branch es6-template-literals
+   21  git switch es6-template-literals 
+   22  git status
+   23  git push origin es6-template-literals 
+   24  git switch master
+   25  git reset --hard HEAD~1
+   26  git push origin master --force
+   27  git switch es6-template-literals 
+   28  git status
+   29  git checkout master
+   30  git status
+   31  git switch es6-template-literals 
+   32  git status
+   33  git add es6-template-literals/
+   34  git commit -m "Completed es6-template-literals exercise."
+   35  git push origin master es6-template-literals 
+   36  git status
+   37  git checkout master
+   38  git branch es6-destructuring
+   39  git switch es6-destructuring 
+   40  git status
+   41  git add es6-destructuring/
+   42  git commit -m "Completed es6-destructuring exercise."
+   43  git push origin master es6-destructuring 
+   44  git status
+   45  git checkout master
+   46  git branch arrow-functions
+   47  git switch arrow-functions 
+   48  git branch -M es6-arrow-functions
+   49  git status
+   50  git add es6-arrow-functions/
+   51  git commit -m "Completed es6-arrow-functions exercise."
+   52  git status
+   53  git add es6-arrow-functions/
+   54  git commit -m "Completed es6-arrow-functions exercise."
+   55  git push origin es6-arrow-functions 
+   56  cd ~/repos/c0821-code-solutions/
+   57  git status
+   58  git checkout master
+   59  git pull origin master
+   60  command -v git
+   61  git branch command-line-basics
+   62  git switch command-line-basics 
+   63  git status
+   64  git checkout master
+   65  cd command-line-basics/
+   66  pwd
+   67  man man
+   68  man cat
+   69  cat laziness.txt
+   70  cat impatience.txt 
+   71  cat hubris.txt 
+   72  cat laziness.txt impatience.txt hubris.txt 
+   73  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+   74  cat three-virtues.txt 
+   75  man ls
+   76  ls -a lfz-staff/
+   77  ls
+   78  ls -a
+   79  ls -F
+   80  ls -aF
+   81  man ls
+   82  ls -aF lfz-staff > lfz-staff/contents.txt
+   83  cat lfz-staff/contents.txt 
+   84  man pwd
+   85  pwd
+   86  pwd > i-was-here.txt
+   87  ls
+   88  cat i-was-here.txt 
+   89  man echo
+   90  echo 'Hello, World!'
+   91  echo 'Hello, World!' > hello.txt
+   92  ls
+   93  cat hello.txt 
+   94  man touch
+   95  touch > tag-youre-it.txt
+   96  man touch
+   97  touch tag-youre-it.txt
+   98  ls
+   99  touch boop.txt > snoot/
+  100  touch snoot/boop.txt
+  101  ls /boot/
+  102  ls /snoot/
+  103  ls snoot/
+  104  man mkdir
+  105  mkdir -p parent
+  106  ls
+  107  mkdir -p parent/child/grandchild
+  108  touch parent/child/grandchild/.gitkeep
+  109  ls -a
+  110  ls -a parent/child/grandchild/
+  111  man mv
+  112  mv pokiemans pokemon
+  113  ls
+  114  man rm
+  115  git rm lol.txt
+  116  rm -f lol.txt
+  117  ls
+  118  rm -r kill-me/
+  119  ls
+  120  man cp
+  121  cp and-then.txt no-and-then.txt
+  122  ls
+  123  cat and-then.txt 
+  124  cat no-and-then.txt 
+  125  man history
+  126  history
+  127  history > command-history-txt
