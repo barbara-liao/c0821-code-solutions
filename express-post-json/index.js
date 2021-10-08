@@ -18,17 +18,17 @@ const expressJSON = express.json();
 app.use(expressJSON);
 
 app.post('/api/grades', (req, res) => {
-  res.json({
+  const postGrade = {
     course: req.body.course,
     id: nextID,
     name: req.body.name,
     score: req.body.score
-  });
-  const postGrade = req.body;
+  };
   postGrade.id = nextID;
   grades[nextID] = postGrade;
   nextID++;
   res.status(201);
+  res.json(postGrade);
 });
 
 app.listen(3000, () => {
