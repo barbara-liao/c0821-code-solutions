@@ -2,7 +2,6 @@ const express = require('express');
 const data = require('./data.json');
 const fs = require('fs');
 const app = express();
-var JSONData = null;
 
 const errorMessage = { error: 'An unexpected error occurred.' };
 
@@ -44,7 +43,7 @@ app.post('/api/notes', (req, res) => {
     newNote.id = data.nextId;
     data.notes[Number(data.nextId)] = newNote;
     data.nextId++;
-    JSONData = JSON.stringify(data, null, 2);
+    const JSONData = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', JSONData, 'utf-8', function (err) {
       if (err) {
         res.status(500).json(errorMessage);
@@ -65,7 +64,7 @@ app.delete('/api/notes/:id', (req, res) => {
     res.status(404).json(notFound);
   } else if (data.notes[deleteId] !== undefined) {
     delete data.notes[deleteId];
-    JSONData = JSON.stringify(data, null, 2);
+    const JSONData = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', JSONData, 'utf-8', function (err) {
       if (err) {
         res.status(500).json(errorMessage);
@@ -90,7 +89,7 @@ app.put('/api/notes/:id', (req, res) => {
     res.status(404).json(notFound);
   } else if (replaceNote.content !== undefined && data.notes[replaceId] !== undefined) {
     data.notes[replaceId].content = replaceNote.content;
-    JSONData = JSON.stringify(data, null, 2);
+    const JSONData = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', JSONData, 'utf-8', err => {
       if (err) {
         res.status(500).json(errorMessage);
