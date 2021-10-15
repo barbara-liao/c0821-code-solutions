@@ -26,12 +26,10 @@ const product = numbers.reduce(multNums);
 console.log('product: ', product);
 
 const acctBal = (previousValue, currentValue) => {
-  for (let i = 0; i < account.length; i++) {
-    if (currentValue.type === 'deposit') {
-      return previousValue + currentValue.amount;
-    } else if (currentValue.type === 'withdrawal') {
-      return previousValue - currentValue.amount;
-    }
+  if (currentValue.type === 'deposit') {
+    return previousValue + currentValue.amount;
+  } else if (currentValue.type === 'withdrawal') {
+    return previousValue - currentValue.amount;
   }
 };
 const balance = account.reduce(acctBal, 0);
