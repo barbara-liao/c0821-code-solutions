@@ -1,0 +1,33 @@
+button {
+  border: solid 1px black;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+}
+
+.inferno {
+  background-color: white;
+}
+
+.hot {
+  background-color: rgb(255, 255, 0);
+}
+
+.warm {
+  background-color: rgb(246, 178, 107);
+}
+
+.room {
+  color: white;
+  background-color: rgb(224, 102, 102);
+}
+
+.cool {
+  color: white;
+  background-color: rgb(103, 78, 167);
+}
+
+.cold {
+  color: white;
+  background-color: rgb(53, 28, 117);
+}
