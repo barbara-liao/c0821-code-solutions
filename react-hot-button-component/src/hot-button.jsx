@@ -3,14 +3,12 @@ import React from 'react';
 export default class HotButton extends React.Component {
   constructor(props) {
     super(props);
-    const count = this.count = 0;
-    this.state = { clicks: count };
+    this.state = { clicks: 0 };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    this.count++;
-    this.setState({ clicks: this.count });
+    this.setState({ clicks: this.state.clicks + 1 });
   }
 
   render() {
