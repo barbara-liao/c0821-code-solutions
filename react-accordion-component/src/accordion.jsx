@@ -9,7 +9,7 @@ export default class Accordion extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
+  handleClick(event) {
     const key = event.target.id;
     if (event.target.nodeName === 'H3') {
       if (this.state.itemViewed === key) {
