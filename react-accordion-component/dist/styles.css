@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h3,
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+button,
+li {
+  list-style-type: none;
+  width: 60%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  border: solid darkgray 1px;
+  background-color: lightgrey;
+  font-size: 1.2rem;
+}
+
+.detail {
+  border: solid lightgrey 1px;
+}
+
+.hidden {
+  display: none;
+}
