@@ -38,7 +38,7 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
-    const newTodos = [...this.state.todos];
+    const newTodos = JSON.parse(JSON.stringify(this.state.todos));
     const index = newTodos.findIndex(todo => todo.todoId === todoId);
     const updateTodo = newTodos[index];
     updateTodo.isCompleted = !updateTodo.isCompleted;
