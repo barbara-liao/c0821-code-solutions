@@ -38,18 +38,18 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
-    const newTodos = JSON.parse(JSON.stringify(this.state.todos));
-    const index = newTodos.findIndex(todo => todo.todoId === todoId);
-    const updateTodo = newTodos[index];
-    updateTodo.isCompleted = !updateTodo.isCompleted;
+    const index = this.state.todos.findIndex(todo => todo.todoId === todoId);
+    const targetTodo = this.state.todos[index];
+    const update = { isCompleted: !targetTodo.isCompleted };
     fetch(`/api/todos/${todoId}`, {
       method: 'PATCH',
-      body: JSON.stringify(updateTodo),
+      body: JSON.stringify(update),
       headers: { 'Content-Type': 'application/json' }
     })
       .then(response => response.json())
       .then(data => {
-        newTodos.splice(index, 1, updateTodo);
+        const newTodos = [...this.state.todos];
+        newTodos.splice(index, 1, data);
         this.setState({
           todos: newTodos
         });
