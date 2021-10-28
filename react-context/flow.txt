@@ -20,7 +20,7 @@ User can sign in.
   The handleSignIn method is run, which sets the 'react-context-jwt' name as the token. The state is set and page re-rendered to the home page.
 
 User can stay signed in (even if they refresh the page).
-  If the page is reloaded, the server checks for a token in the localStorage. If there is one, the state is set with the token and
+  If the page is reloaded, the client code checks for a token in the localStorage. If there is one, the state is set with the token and
   page re-rendered to what it was.
 
 User can sign out.
