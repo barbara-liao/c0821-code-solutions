@@ -1,0 +1,28 @@
+Describe the flow of the code in writing, including the client, server and database.
+How does the code work?
+
+User can sign up.
+  From the rendered auth form, user can click the "Sign Up" button or the "Register now" a tag, which will bring
+  them to the hashed page where they can register. User inputs username and password. As they type, the state is continuously
+  being updated. Once the submit button is clicked, the req is created and the req.body is assigned the stringified version of
+  the state. A "POST" method is then called through the fetch method at '/api/auth/sign-up.
+  The server then checks to see if a username and password is entered. If one or all are missing, an error will be thrown.
+  The password is hashed and then inserted into the database and a 201 success status is sent back.
+  If it is a success, then the hash router will be updated and the user will be taken to the sign in page.
+
+User can sign in.
+  On the sign in page, user inputs username and password. As they type, the state is continuously being updated.
+  Once the submit button is clicked, the req is created and req.body is assigned the stringified version of the
+  state. A "POST" method is then called through the fetch method at '/api/auth/sign-in'.
+  The server checks to see if a user name is entered. If one or all are missing, an error will be thrown.
+  The server checks the hashed password in the system against the entered in password using .verify. If it doesn't match, an error will be thrown.
+  If it matches, a user payload and token is then created and passed into the onSignIn method, which is the handleSignIn method.
+  The handleSignIn method is run, which sets the 'react-context-jwt' name as the token. The state is set and page re-rendered to the home page.
+
+User can stay signed in (even if they refresh the page).
+  If the page is reloaded, the server checks for a token in the localStorage. If there is one, the state is set with the token and
+  page re-rendered to what it was.
+
+User can sign out.
+  If the user clicks the sign out button, the handleSignOut method is called, which removes the 'react-context-jwt' item
+  from the local storage and sets state to user:null, which rerenders the page, bringing the user back to the sign in page.
